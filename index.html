@@ -36,6 +36,7 @@ function onDeviceReady(){
 
 		/**********Evento para consulta*************/
 		$("#btnConsServ").tap(function (){
+			alert ("funciona");
 			$.ajax({
 				type:"POST",
 				url:"http://www.karenmovil.esy.es/Consulta.php",
@@ -53,7 +54,7 @@ function onDeviceReady(){
 
 		/**********Evento para consulta por ID*************/
 		$("#btnConsID").tap(function (){
-			//alert("Funciona");
+			alert("Funciona");
 			var id=$("#txtIDserv").val();
 			$.ajax({
 				type:"POST",
