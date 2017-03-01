@@ -1,8 +1,9 @@
 <?php
 
 include "conexion.php";
+$id=$_POST["ID"];
 
-$sql="SELECT * FROM servicios where Id_Servicios=$Id";
+$sql="SELECT * FROM servicios where Id_servicio=$id";
 $result=mysqli_query($conn,$sql);
 $datos= array();
 if($result){
